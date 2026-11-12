@@ -2,7 +2,7 @@ name: 心悦活动监控
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # 每 15 分钟一次（GitHub 可能会有延迟）
+    - cron: "*/5 * * * *"    # 每 5 分钟一次（GitHub 允许的最短间隔，可能会有延迟）
   workflow_dispatch:          # 允许手动运行
 
 permissions:
